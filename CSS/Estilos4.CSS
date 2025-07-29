@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e0229;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+header {
+  text-align: center;
+  padding: 100px 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00f0ff;
+  text-shadow: 0 0 20px #00f0ffcc;
+  margin-bottom: 10px;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #fff;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: #ffffffcc;
+  margin-top: 10px;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 60px 10%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.tarjeta {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ffffff22;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00bfff33;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00bfffcc;
+}
+
+.tarjeta h2 {
+  color: #00eaff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.tarjeta p, .tarjeta li {
+  color: #e0e0e0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaa;
+  margin-top: 60px;
+  z-index: 1;
+  position: relative;
+}
+
+footer .boton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #00bfff88;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+footer .boton:hover {
+  background: #00eaff;
+  box-shadow: 0 0 25px #00eaffaa;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .contenedor {
+    padding: 40px 20px;
+  }
+}

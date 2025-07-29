@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asamblea Nacional Constituyente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../CSS/Estilos4.CSS" />
+</head>
+
+<body>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <h1 class="typewriter">Asamblea Nacional Constituyente</h1>
+    <p class="subtitulo">Un nuevo comienzo para una nación más justa y democrática</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h2>¿Qué es?</h2>
+      <p>
+        Es un órgano democrático y soberano encargado de redactar o reformar
+        completamente la Constitución de un país. Tiene mayor autoridad que los
+        poderes del Estado mientras está en funciones.
+      </p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>¿Por qué se convoca?</h2>
+      <ul>
+        <li>Cuando la Constitución actual ya no responde a las necesidades del país.</li>
+        <li>En momentos de crisis política o institucional.</li>
+        <li>Cuando se busca refundar el país sobre nuevos valores.</li>
+      </ul>
+    </section>
+
+    <section class="tarjeta">
+      <h2>¿Quiénes la integran?</h2>
+      <p>
+        Sus miembros, llamados <strong>constituyentes</strong>, son elegidos por
+        el pueblo para representar a la ciudadanía y redactar la nueva
+        Constitución.
+      </p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Funciones principales</h2>
+      <ul>
+        <li>Redactar una nueva Constitución.</li>
+        <li>Definir la organización del gobierno.</li>
+        <li>Establecer los derechos y deberes ciudadanos.</li>
+        <li>Garantizar la participación democrática.</li>
+      </ul>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Importancia para Honduras</h2>
+      <p>
+        Una Asamblea Constituyente podría ser una oportunidad para fortalecer la
+        democracia, ampliar derechos y crear un nuevo pacto social justo e
+        inclusivo.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Página creada por Diana</p>
+    <a href="../Enlaces/index3.html" class="boton">Volver a la página principal</a>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: { enable: true, value_area: 900 },
+        },
+        color: { value: ["#00ffff", "#00bfff", "#0066cc"] },
+        shape: { type: "circle" },
+        opacity: {
+          value: 0.6,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 4,
+          random: true,
+          anim: { enable: true, speed: 4, size_min: 1, sync: false },
+        },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "bounce",
+          bounce: true,
+          attract: { enable: true, rotateX: 600, rotateY: 1200 },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00e0ff",
+          opacity: 0.4,
+          width: 1.5,
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true,
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.5 },
+          push: { particles_nb: 4 },
+        },
+      },
+      retina_detect: true,
+      background: { color: "#050407" },
+    });
+
+    
+    ScrollReveal().reveal(".tarjeta", {
+      delay: 200,
+      distance: "50px",
+      origin: "bottom",
+      duration: 1000,
+      reset: false,
+    });
+
+    ScrollReveal().reveal("header h1, .subtitulo", {
+      delay: 100,
+      distance: "30px",
+      origin: "top",
+      duration: 1000,
+    });
+
+    ScrollReveal().reveal("footer", {
+      delay: 300,
+      distance: "40px",
+      origin: "bottom",
+      duration: 1000,
+    });
+  </script>
+</body>
+
+</html>
